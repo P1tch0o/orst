@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: resize_150x100_
+label: 'Resize (150x100)'
+effects:
+  50998a76-a967-4a70-b4a7-623c8e18e9fa:
+    uuid: 50998a76-a967-4a70-b4a7-623c8e18e9fa
+    id: image_resize
+    weight: 1
+    data:
+      width: 150
+      height: 100

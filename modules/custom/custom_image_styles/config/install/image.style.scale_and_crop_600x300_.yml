@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: scale_and_crop_600x300_
+label: 'Scale and Crop (600x300)'
+effects:
+  e2c878c3-8f26-471b-b7cb-e4441da6d109:
+    uuid: e2c878c3-8f26-471b-b7cb-e4441da6d109
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 300
