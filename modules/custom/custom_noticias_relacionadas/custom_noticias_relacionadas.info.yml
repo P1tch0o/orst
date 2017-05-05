@@ -1,0 +1,15 @@
+name: 'Notícias Relacionadas'
+description: 'Bloco contendo notícias relacionadas '
+type: module
+core: 8.x
+dependencies:
+  - block
+  - custom_image_styles
+  - custom_noticias
+  - image
+  - node
+  - taxonomy
+  - user
+  - views
+version: 8.x-1.1
+package: Custom
