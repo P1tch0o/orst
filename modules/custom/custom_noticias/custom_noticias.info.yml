@@ -1,0 +1,17 @@
+name: Noticias
+description: 'Tipo de conteúdo notícias'
+type: module
+core: 8.x
+dependencies:
+  - custom_image_styles
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+version: 8.x-1.1
+package: Custom
