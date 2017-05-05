@@ -1,0 +1,14 @@
+name: Evento
+description: 'Provides Evento content type and related configuration. O que de pior pode acontecer?'
+type: module
+core: 8.x
+dependencies:
+  - custom_image_styles
+  - field
+  - image
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+package: Custom
