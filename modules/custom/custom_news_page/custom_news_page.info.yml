@@ -6,8 +6,9 @@ dependencies:
   - block
   - custom_noticias
   - node
+  - system
   - taxonomy
   - user
   - views
-version: 8.x-1.0
+version: 8.x-1.1
 package: Custom

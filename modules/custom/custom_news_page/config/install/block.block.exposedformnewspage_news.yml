@@ -4,6 +4,7 @@ dependencies:
   config:
     - views.view.news
   module:
+    - system
     - views
   theme:
     - bartik
@@ -19,4 +20,9 @@ settings:
   provider: views
   label_display: visible
   views_label: ''
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /noticias
+    negate: false
+    context_mapping: {  }
