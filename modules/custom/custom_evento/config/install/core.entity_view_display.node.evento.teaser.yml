@@ -4,8 +4,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.evento.body
+    - field.field.node.evento.field_image
+    - field.field.node.evento.field_tags
+    - image.style.resize_100x100_
     - node.type.evento
   module:
+    - image
     - text
     - user
 id: node.evento.teaser
@@ -16,12 +20,24 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  field_image:
+    type: image
+    weight: 1
     region: content
-hidden: {  }
+    label: hidden
+    settings:
+      image_style: resize_100x100_
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_tags: true
