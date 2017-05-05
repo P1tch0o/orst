@@ -4,8 +4,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.noticias.body
+    - field.field.node.noticias.field_categoria
+    - field.field.node.noticias.field_imagemnoticia
+    - field.field.node.noticias.field_tags
+    - image.style.resize_100x100_
     - node.type.noticias
   module:
+    - image
     - text
     - user
 id: node.noticias.teaser
@@ -16,12 +21,32 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  field_categoria:
+    type: entity_reference_label
+    weight: 3
     region: content
-hidden: {  }
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_imagemnoticia:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: resize_100x100_
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_tags: true
