@@ -2,5 +2,7 @@ name: 'Security config'
 description: 'Versiona configurações de segurança.'
 type: module
 core: 8.x
-version: 8.x-1.0
+version: 8.x-1.1
 package: Custom
+dependencies:
+  - honeypot
