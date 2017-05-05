@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_categoria
     - node.type.noticias
+    - taxonomy.vocabulary.noticias
 id: node.noticias.field_categoria
 field_name: field_categoria
 entity_type: node
@@ -15,6 +16,12 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_vocabulary'
-  handler_settings: {  }
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      noticias: noticias
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference
