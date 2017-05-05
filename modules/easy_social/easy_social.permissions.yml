@@ -1,4 +1,0 @@
-administer easy_social:
-  description: 'Change settings for the Easy Social module.'
-  title: 'Administer Easy Social'
-  restrict access: TRUE

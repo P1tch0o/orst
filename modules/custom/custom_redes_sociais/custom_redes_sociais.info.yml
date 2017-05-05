@@ -6,3 +6,4 @@ dependencies:
   - easy_social
 version: 8.x-1.1
 package: Custom
+description: 'Versiona configurações de social media'

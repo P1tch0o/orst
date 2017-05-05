@@ -1,3 +1,0 @@
-config: 'above' # One of: 'above', 'beside', 'none'
-image: '' # String
-description: 'Next stop: Pinterest' # String
