@@ -10,8 +10,8 @@ dependencies:
 id: events
 label: Events
 module: node
-description: 'All content promoted to the front page.'
-tag: default
+description: 'List recent events.'
+tag: ''
 base_table: node_field_data
 base_field: nid
 core: 8.x
@@ -162,8 +162,9 @@ display:
         weight: 2
         context: '0'
         menu_name: main
+      display_description: ''
     display_plugin: page
-    display_title: Page
+    display_title: Eventos
     id: page_events
     position: 1
     cache_metadata:
